@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E443B5164D873FEDA551305 /* Pods_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81981BC3723FF7E2C6013FE9 /* Pods_MVVM.framework */; };
+		EF1EC14323013FBC00439037 /* ReadOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1EC14223013FBC00439037 /* ReadOnce.swift */; };
+		EF3D60CD230066AC0044A5EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60CC230066AC0044A5EE /* AppDelegate.swift */; };
+		EF3D60D2230066AC0044A5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D60D0230066AC0044A5EE /* Main.storyboard */; };
+		EF3D60D4230066B00044A5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3D60D3230066B00044A5EE /* Assets.xcassets */; };
+		EF3D60D7230066B00044A5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D60D5230066B00044A5EE /* LaunchScreen.storyboard */; };
+		EF3D60E1230067720044A5EE /* AlertContainerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60E0230067720044A5EE /* AlertContainerDelegate.swift */; };
+		EF3D60E5230067E30044A5EE /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60E4230067E30044A5EE /* LocalizationManager.swift */; };
+		EF3D60E7230068220044A5EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60E6230068220044A5EE /* Constants.swift */; };
+		EF3D60EC23006C890044A5EE /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60EB23006C890044A5EE /* Bindable.swift */; };
+		EF3D60EF23006CE20044A5EE /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60EE23006CE20044A5EE /* FriendModel.swift */; };
+		EF3D60F223006D290044A5EE /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60F123006D290044A5EE /* RequestManager.swift */; };
+		EF3D60F7230070550044A5EE /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60F5230070550044A5EE /* FriendTableViewCell.swift */; };
+		EF3D60F8230070550044A5EE /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3D60F6230070550044A5EE /* FriendTableViewCell.xib */; };
+		EF3D60FB230071750044A5EE /* FriendCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60FA230071750044A5EE /* FriendCellViewModel.swift */; };
+		EF3D60FF230087930044A5EE /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D60FE230087930044A5EE /* FriendsViewController.swift */; };
+		EF3D6102230088C60044A5EE /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6101230088C60044A5EE /* CommonViewController.swift */; };
+		EF3D6104230091E90044A5EE /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6103230091E90044A5EE /* FriendsViewModel.swift */; };
+		EF3D61062300A27D0044A5EE /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D61052300A27D0044A5EE /* FriendViewController.swift */; };
+		EF3D61082300A5D00044A5EE /* AddFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D61072300A5D00044A5EE /* AddFriendViewModel.swift */; };
+		EF3D610A2300A7700044A5EE /* UpdateFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D61092300A7700044A5EE /* UpdateFriendViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		028EC435A2F36D0E6EE81FDB /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		81981BC3723FF7E2C6013FE9 /* Pods_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA777A95B8920C70B180CFE /* Pods-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.release.xcconfig"; path = "Target Support Files/Pods-MVVM/Pods-MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		EF1EC14223013FBC00439037 /* ReadOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadOnce.swift; sourceTree = "<group>"; };
+		EF3D60C9230066AC0044A5EE /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3D60CC230066AC0044A5EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF3D60D1230066AC0044A5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF3D60D3230066B00044A5EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF3D60D6230066B00044A5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF3D60D8230066B00044A5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3D60E0230067720044A5EE /* AlertContainerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContainerDelegate.swift; sourceTree = "<group>"; };
+		EF3D60E4230067E30044A5EE /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		EF3D60E6230068220044A5EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF3D60EB23006C890044A5EE /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		EF3D60EE23006CE20044A5EE /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		EF3D60F123006D290044A5EE /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		EF3D60F5230070550044A5EE /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		EF3D60F6230070550044A5EE /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		EF3D60FA230071750044A5EE /* FriendCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCellViewModel.swift; sourceTree = "<group>"; };
+		EF3D60FE230087930044A5EE /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		EF3D6101230088C60044A5EE /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		EF3D6103230091E90044A5EE /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		EF3D61052300A27D0044A5EE /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		EF3D61072300A5D00044A5EE /* AddFriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewModel.swift; sourceTree = "<group>"; };
+		EF3D61092300A7700044A5EE /* UpdateFriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFriendViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF3D60C6230066AC0044A5EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E443B5164D873FEDA551305 /* Pods_MVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100C9D947738CA50BED0997F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				028EC435A2F36D0E6EE81FDB /* Pods-MVVM.debug.xcconfig */,
+				CDA777A95B8920C70B180CFE /* Pods-MVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4C8C73B0C3301B74CE84B7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81981BC3723FF7E2C6013FE9 /* Pods_MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF3D60C0230066AC0044A5EE = {
+			isa = PBXGroup;
+			children = (
+				EF3D60CB230066AC0044A5EE /* MVVM */,
+				EF3D60CA230066AC0044A5EE /* Products */,
+				100C9D947738CA50BED0997F /* Pods */,
+				D4C8C73B0C3301B74CE84B7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF3D60CA230066AC0044A5EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60C9230066AC0044A5EE /* MVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF3D60CB230066AC0044A5EE /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60E2230067C40044A5EE /* Manager */,
+				EF3D60DF2300673C0044A5EE /* Utils */,
+				EF3D60ED23006CD00044A5EE /* Model */,
+				EF3D60F323006EDD0044A5EE /* View */,
+				EF3D60F9230071020044A5EE /* ViewModel */,
+				EF3D60FD230087070044A5EE /* ViewController */,
+				EF3D610B2300AA4A0044A5EE /* Storyboard */,
+				EF3D60D3230066B00044A5EE /* Assets.xcassets */,
+				EF3D60FC230086EB0044A5EE /* Supporting Files */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		EF3D60DE2300672A0044A5EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60E0230067720044A5EE /* AlertContainerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EF3D60DF2300673C0044A5EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D6100230088A20044A5EE /* Common UI */,
+				EF3D60DE2300672A0044A5EE /* Protocols */,
+				EF3D60EA23006C720044A5EE /* Helpers */,
+				EF3D60E6230068220044A5EE /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF3D60E2230067C40044A5EE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60E3230067CA0044A5EE /* Localization Manager */,
+				EF3D60F023006D0D0044A5EE /* Request Manager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EF3D60E3230067CA0044A5EE /* Localization Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60E4230067E30044A5EE /* LocalizationManager.swift */,
+			);
+			path = "Localization Manager";
+			sourceTree = "<group>";
+		};
+		EF3D60EA23006C720044A5EE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60EB23006C890044A5EE /* Bindable.swift */,
+				EF1EC14223013FBC00439037 /* ReadOnce.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EF3D60ED23006CD00044A5EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60EE23006CE20044A5EE /* FriendModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF3D60F023006D0D0044A5EE /* Request Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60F123006D290044A5EE /* RequestManager.swift */,
+			);
+			path = "Request Manager";
+			sourceTree = "<group>";
+		};
+		EF3D60F323006EDD0044A5EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60F42300702C0044A5EE /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF3D60F42300702C0044A5EE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60F5230070550044A5EE /* FriendTableViewCell.swift */,
+				EF3D60F6230070550044A5EE /* FriendTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EF3D60F9230071020044A5EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60FA230071750044A5EE /* FriendCellViewModel.swift */,
+				EF3D6103230091E90044A5EE /* FriendsViewModel.swift */,
+				EF3D61092300A7700044A5EE /* UpdateFriendViewModel.swift */,
+				EF3D61072300A5D00044A5EE /* AddFriendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF3D60FC230086EB0044A5EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60CC230066AC0044A5EE /* AppDelegate.swift */,
+				EF3D60D5230066B00044A5EE /* LaunchScreen.storyboard */,
+				EF3D60D8230066B00044A5EE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF3D60FD230087070044A5EE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60FE230087930044A5EE /* FriendsViewController.swift */,
+				EF3D61052300A27D0044A5EE /* FriendViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EF3D6100230088A20044A5EE /* Common UI */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D6101230088C60044A5EE /* CommonViewController.swift */,
+			);
+			path = "Common UI";
+			sourceTree = "<group>";
+		};
+		EF3D610B2300AA4A0044A5EE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60D0230066AC0044A5EE /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF3D60C8230066AC0044A5EE /* MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3D60DB230066B00044A5EE /* Build configuration list for PBXNativeTarget "MVVM" */;
+			buildPhases = (
+				D1564CF68E117CA9E8AFCBE6 /* [CP] Check Pods Manifest.lock */,
+				EF3D60C5230066AC0044A5EE /* Sources */,
+				EF3D60C6230066AC0044A5EE /* Frameworks */,
+				EF3D60C7230066AC0044A5EE /* Resources */,
+				9038594DB953393B19597E63 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVVM;
+			productName = MVVM;
+			productReference = EF3D60C9230066AC0044A5EE /* MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF3D60C1230066AC0044A5EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Astghik Hakopian";
+				TargetAttributes = {
+					EF3D60C8230066AC0044A5EE = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = EF3D60C4230066AC0044A5EE /* Build configuration list for PBXProject "MVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF3D60C0230066AC0044A5EE;
+			productRefGroup = EF3D60CA230066AC0044A5EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF3D60C8230066AC0044A5EE /* MVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF3D60C7230066AC0044A5EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3D60D7230066B00044A5EE /* LaunchScreen.storyboard in Resources */,
+				EF3D60D4230066B00044A5EE /* Assets.xcassets in Resources */,
+				EF3D60D2230066AC0044A5EE /* Main.storyboard in Resources */,
+				EF3D60F8230070550044A5EE /* FriendTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9038594DB953393B19597E63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM/Pods-MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM/Pods-MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM/Pods-MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1564CF68E117CA9E8AFCBE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF3D60C5230066AC0044A5EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3D6104230091E90044A5EE /* FriendsViewModel.swift in Sources */,
+				EF3D60EC23006C890044A5EE /* Bindable.swift in Sources */,
+				EF3D61082300A5D00044A5EE /* AddFriendViewModel.swift in Sources */,
+				EF3D61062300A27D0044A5EE /* FriendViewController.swift in Sources */,
+				EF3D60EF23006CE20044A5EE /* FriendModel.swift in Sources */,
+				EF3D610A2300A7700044A5EE /* UpdateFriendViewModel.swift in Sources */,
+				EF3D60CD230066AC0044A5EE /* AppDelegate.swift in Sources */,
+				EF3D60E5230067E30044A5EE /* LocalizationManager.swift in Sources */,
+				EF3D60F223006D290044A5EE /* RequestManager.swift in Sources */,
+				EF3D60E1230067720044A5EE /* AlertContainerDelegate.swift in Sources */,
+				EF1EC14323013FBC00439037 /* ReadOnce.swift in Sources */,
+				EF3D60FF230087930044A5EE /* FriendsViewController.swift in Sources */,
+				EF3D60E7230068220044A5EE /* Constants.swift in Sources */,
+				EF3D60FB230071750044A5EE /* FriendCellViewModel.swift in Sources */,
+				EF3D6102230088C60044A5EE /* CommonViewController.swift in Sources */,
+				EF3D60F7230070550044A5EE /* FriendTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF3D60D0230066AC0044A5EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF3D60D1230066AC0044A5EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF3D60D5230066B00044A5EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF3D60D6230066B00044A5EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF3D60D9230066B00044A5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF3D60DA230066B00044A5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF3D60DC230066B00044A5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 028EC435A2F36D0E6EE81FDB /* Pods-MVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYU36ULCN7;
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astghik.MVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF3D60DD230066B00044A5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA777A95B8920C70B180CFE /* Pods-MVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYU36ULCN7;
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.astghik.MVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF3D60C4230066AC0044A5EE /* Build configuration list for PBXProject "MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3D60D9230066B00044A5EE /* Debug */,
+				EF3D60DA230066B00044A5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF3D60DB230066B00044A5EE /* Build configuration list for PBXNativeTarget "MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3D60DC230066B00044A5EE /* Debug */,
+				EF3D60DD230066B00044A5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF3D60C1230066AC0044A5EE /* Project object */;
+}
